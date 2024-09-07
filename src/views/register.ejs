@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include('partials/head.ejs') %>
+<body>
+
+    
+    <form style="display: flex; flex-wrap: wrap; align-content: center; flex-direction: column; align-items:center; margin-top: 120px;" action="/register/add" method="POST">
+        <img src="https://www.konsolute.com/wp-content/uploads/undraw_Maker_launch_re_rq81.png" width="350px" alt="">
+        <div>
+            <label></label>
+            <input type="text" name="name" id="" placeholder="Digite seu nome">
+        </div>
+        <div>
+            <label></label>
+            <input type="text" name="age" id="" placeholder="Digite sua idade">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+        <% if (typeof message !== 'undefined') { %>
+            <%= message  %>
+        <% } %>
+    </form>
+</body>
+</html>
